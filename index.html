@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TelePharm Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="login-screen">
+    <h1>TelePharm Login</h1>
+    <label for="role">Select Role:</label>
+    <select id="role">
+      <option value="medic">Medic</option>
+      <option value="manager">Manager</option>
+      <option value="supply">Supply Officer</option>
+    </select>
+    <button onclick="enterDashboard()">Enter</button>
+  </div>
+
+  <div id="dashboard" style="display:none">
+    <h2 id="welcome-msg"></h2>
+    <div id="dashboard-content"></div>
+  </div>
+
+  <script src="dashboard_logic.js"></script>
+  <script src="vitals_input.js"></script>
+</body>
+</html>
